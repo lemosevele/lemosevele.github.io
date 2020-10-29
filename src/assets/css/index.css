@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: Kufam;
+    background-color: #f2f2f2;
+}
+
+html{
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .container-box{
+    display: flex;
+    align-items: center;
+}
+
+.container .container-box .container-box-info{
+    width: 400px;
+}
+
+.container .container-box .container-box-info .container-box-info-title{
+    margin-bottom: 20px;
+}
+
+.container .container-box .container-box-info .container-box-info-subtitle{
+    margin-bottom: 10px;
+}
+
+.container .container-box .container-box-info .container-box-info-text{
+    margin-bottom: 20px;
+}
+
+.container .container-box .container-box-info .container-box-info-social img{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    object-fit: contain;
+    filter: brightness(0%);
+}
+
+.container-header{
+    padding: 20px 200px;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    background-color: #f2f2f2;
+}
+
+.container-header .container-header-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container-header .container-header-list .container-header-list-item{
+    margin: 0 20px;
+}
+
+a, a:hover, a:active, a:visited, a:link{
+    text-decoration: none;
+    color: inherit;
+}
