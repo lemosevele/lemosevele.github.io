@@ -1,75 +1,64 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
-
-html,body{
-    font-family: Kufam;
-    background-color: #f2f2f2;
-}
-
-html{
-    overflow-x:hidden;
-    scroll-behavior: smooth;
-}
-
-.container{
+  }
+  
+  body{
+    background-image: linear-gradient(to right, #AC76E0 , #FC83DE);
+    font-family: sans-serif;
+  }
+  
+  .container{
     display: flex;
-    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    /*border: 1px solid red;*/
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.container .container-box{
-    display: flex;
-    align-items: center;
-}
-
-.container .container-box .container-box-info{
-    width: 400px;
-}
-
-.container .container-box .container-box-info .container-box-info-title{
-    margin-bottom: 20px;
-}
-
-.container .container-box .container-box-info .container-box-info-subtitle{
-    margin-bottom: 10px;
-}
-
-.container .container-box .container-box-info .container-box-info-text{
-    margin-bottom: 20px;
-}
-
-.container .container-box .container-box-info .container-box-info-social img{
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
-    object-fit: contain;
-    filter: brightness(0%);
-}
-
-.container-header{
-    padding: 20px 200px;
-    position: fixed;
-    z-index: 1;
-    width: 100vw;
-    background-color: #f2f2f2;
-}
-
-.container-header .container-header-list{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.container-header .container-header-list .container-header-list-item{
-    margin: 0 20px;
-}
-
-a, a:hover, a:active, a:visited, a:link{
+  }
+  
+  .container .perfil{
+    margin: 1.5rem;
+  }
+  
+  .container .perfil .username{
+    color: #fff;
+    margin-top: 0.8rem;
+    font-weight: bold;
+  }
+  
+  .container .perfil .photo{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+  }
+  
+  .custom-button{
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-weight: bold;
+    text-align: center;
+    width: 95%;
+    padding: 1rem;
+    height: 3rem;
+    margin: 0.5rem;
+  }
+  
+  .custom-button:hover{
+    border-color: transparent;
+  }
+  
+  a{
     text-decoration: none;
-    color: inherit;
-}
+  }
+  
+  @media (min-width: 1000px)
+  {
+    .custom-button{
+      width: 60%;
+    }
+  
+  }
